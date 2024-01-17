@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Personal_area extends AppCompatActivity implements View.OnClickListener {
 
+    String login;
+    TextView naming;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +21,12 @@ public class Personal_area extends AppCompatActivity implements View.OnClickList
         backbutton.setOnClickListener(this);
         Button allorders = findViewById(R.id.ordersbtn);
         allorders.setOnClickListener(this);
+/*        naming = findViewById(R.id.username);
+        Bundle extras = getIntent().getExtras();
+        login = extras.getString("name");
+        naming.setText(login);*/
+
+
     }
 
 
