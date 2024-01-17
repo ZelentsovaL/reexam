@@ -102,8 +102,8 @@
 
     <ImageView
         android:id="@+id/statbackbtn"
-        android:layout_width="55dp"
-        android:layout_height="33dp"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/icon"
@@ -120,7 +120,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toEndOf="@+id/statbackbtn"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -150,31 +150,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkboxgetted"
+        style="@style/Widget.Material3.CompoundButton.CheckBox"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginBottom="80dp"
+        android:backgroundTint="#FFEB3B"
+        android:buttonTint="#FFC107"
+        android:foregroundTint="#FFC107"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#FFC107"
+        android:textColorLink="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:useMaterialThemeColors="false" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkboxgetted"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginBottom="36dp"
+        android:buttonTint="#FFC107"
+        android:foregroundTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.959"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkboxgetted"
         android:layout_width="41dp"
         android:layout_height="40dp"
         android:layout_marginBottom="124dp"
         android:backgroundTint="#00FFFFFF"
+        android:buttonTint="#FFC107"
+        android:foregroundTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
@@ -189,7 +202,7 @@
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxgetted"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -202,7 +215,7 @@
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxgetted"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -215,8 +228,22 @@
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxgetted"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/towebbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFC107"
+        android:text="To Web"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
